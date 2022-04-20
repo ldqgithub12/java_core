@@ -40,7 +40,7 @@ public class MethodExcercise {
     }
 
     private static void sayHelloWithPara(String name) {
-        System.out.println("Xin chao \""+name+"\"");
+        System.out.println("Xin chao "+name);
     }
 
     private static void sayHello() {
