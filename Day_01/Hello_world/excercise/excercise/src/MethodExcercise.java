@@ -27,8 +27,8 @@ public class MethodExcercise {
         else  return a+1;
     }
 
-    private static int powNumber(int a) {
-        return (int) Math.pow(a,2);
+    private static long powNumber(int a) {
+        return (long) Math.pow(a,2);
     }
 
     private static int sum(int a, int b) {
