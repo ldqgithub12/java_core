@@ -1,14 +1,16 @@
 public class Bai2 {
     public static void main(String[] args) {
-        repeatString("Quang");
+        System.out.println(repeatString("Quang"));
     }
 
-    private static void repeatString(String inputString) {
+    private static String repeatString(String inputString) {
+        String outputResult="";
         for(int i=1;i<=10;i++){
             if(i ==1){
-                System.out.print(inputString);
+                outputResult += inputString;
             }
-            else System.out.print("-"+inputString);
+            else outputResult += "-"+inputString;
         }
+        return outputResult;
     }
 }

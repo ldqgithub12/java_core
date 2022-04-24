@@ -1,14 +1,16 @@
 public class Bai3 {
     public static void main(String[] args) {
-        repeatString("Quang",5);
+        System.out.println(repeatString("Quang",5));
     }
 
-    private static void repeatString(String inputString, int lengthOfString) {
+    private static String repeatString(String inputString, int lengthOfString) {
+        String outputResult="";
         for(int i=0; i<lengthOfString;i++){
             if(i==0){
-                System.out.print(inputString);
+                outputResult += inputString;
             }
-            else System.out.print("-"+inputString);
+            else outputResult += "-"+inputString;
         }
+        return outputResult;
     }
 }
