@@ -8,7 +8,6 @@ public class Bai1 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your name: ");
         name = sc.nextLine();
-        name.toUpperCase();
         char[] nameChar = name.toCharArray();
         for(int i=0;i<nameChar.length;i++)
         {
