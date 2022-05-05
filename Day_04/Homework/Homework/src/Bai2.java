@@ -24,7 +24,6 @@ public class Bai2 {
                     break;
                 }
                 case 3:{
-
                     numbers = tangSoChan(n,numbers);
                     System.out.println("Mang sau khi thay doi la: ");
                     inMang(n,numbers);
