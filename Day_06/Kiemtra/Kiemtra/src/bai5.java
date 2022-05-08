@@ -15,7 +15,7 @@ public class bai5 {
         System.out.println("Nhap phan tu cua mang: ");
         for (int i = 0; i<row;i++){
             for(int j=0;j<col;j++){
-                System.out.print("a["+i+"]["+j+"]: ");
+                System.out.print("nhap a["+i+"]["+j+"]: ");
                 a[i][j] = sc.nextInt();
             }
         }
