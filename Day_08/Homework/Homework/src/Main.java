@@ -27,18 +27,27 @@ public class Main {
         for (Serial serial : serials){
             serial.printInfor();
         }
+        int count = 0;
         System.out.print("nhap ten phim can tim: ");
         String name = sc.nextLine();
         System.out.println("Phim can tim");
+        System.out.printf("%-5s %-15s %-15s %-15s %-15s %-10s \n","Id","Title","Type","Author","Release date","Time");
         for (Movie movie : movies){
             if (movie.getTitle().contains(name)){
                 movie.printInfor();
+                count++;
             }
         }
+        System.out.println();
+        System.out.printf("%-5s %-15s %-15s %-15s %-15s %-10s %-20s \n","Id","Title","Type","Author","Release date","Episode","Average Time");
         for (Serial serial : serials){
             if (serial.getTitle().contains(name)){
                 serial.printInfor();
+                count++;
             }
+        }
+        if (count == 0){
+            System.out.println("Khong co phim ban muon tim");
         }
     }
 }
