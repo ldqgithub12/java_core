@@ -117,13 +117,23 @@ public class ProductController {
                             case 2:{
                                 System.out.println("Danh sach san pham gia tu 50.000 den 100.000");
                                 ArrayList<Product> list = productServices.findCostFrom50to100();
-                                productServices.printProductList(list);
+                                if (list.isEmpty()){
+                                    System.out.println("Khong tim thay san pham phu hop");
+                                }
+                                else {
+                                    productServices.printProductList(list);
+                                }
                                 break;
                             }
                             case 3:{
                                 System.out.println("Danh sach san pham gia tren 100.000");
                                 ArrayList<Product> list = productServices.findCostFrom100();
-                                productServices.printProductList(list);
+                                if (list.isEmpty()){
+                                    System.out.println("Khong tim thay san pham phu hop");
+                                }
+                                else {
+                                    productServices.printProductList(list);
+                                }
                                 break;
                             }
                             case 4:{
