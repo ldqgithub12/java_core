@@ -4,7 +4,7 @@ import model.Student;
 
 import java.util.ArrayList;
 
-public interface StudentServices {
+public interface IStudentServices {
     void printListStudents(ArrayList<Student> list);
     Student addNewStudent();
     Student updateStudentPoint(int id);

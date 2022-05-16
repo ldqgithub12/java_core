@@ -4,7 +4,7 @@ import model.Student;
 
 import java.util.*;
 
-public class StudentServiceImplement implements StudentServices{
+public class StudentServiceImplement implements IStudentServices {
     public ArrayList<Student> students = new ArrayList<>();
     private void init(){
         students.add(new Student(1,"Nguyen Van A",22,"Ha noi",7,"Java"));
