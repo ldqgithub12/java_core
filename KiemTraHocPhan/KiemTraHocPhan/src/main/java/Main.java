@@ -1,12 +1,14 @@
+import controller.UserController;
+import models.TransactionHistory;
 import models.User;
 import services.UserService;
 
+import java.util.Date;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        UserService userService = new UserService();
-        User u = userService.login();
-        System.out.println(u);
+        UserController userController = new UserController();
+        userController.run();
     }
 }

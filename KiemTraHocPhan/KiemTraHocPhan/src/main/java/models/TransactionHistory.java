@@ -2,6 +2,9 @@ package models;
 
 import lombok.*;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 @ToString
@@ -10,6 +13,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TransactionHistory {
+    private static final String DATE_FORMATTER= "yyyy-MM-dd HH:mm:ss";
     private int id;
     private int userId;
     private String content;
@@ -17,6 +21,7 @@ public class TransactionHistory {
     private String receiveAccount;
     private long receiveMoney;
     public void printTransaction(){
-        System.out.println(id+" - "+date+" - "+content+" - "+receiveAccount+" - "+receiveMoney);
+        SimpleDateFormat formatter= new SimpleDateFormat("dd/MM/yyyy");
+        System.out.println(id+" - "+formatter.format(date)+" - "+content+" - "+receiveAccount+" - "+receiveMoney);
     }
 }

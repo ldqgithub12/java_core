@@ -1,0 +1,42 @@
+[
+  {
+    "id": 51,
+    "userId": 1,
+    "content": "Thua tien nen chuyen",
+    "date": "May 28, 2022, 3:10:36 PM",
+    "receiveAccount": "0798654321",
+    "receiveMoney": 1000000
+  },
+  {
+    "id": 69,
+    "userId": 1,
+    "content": "Chuyen tien OT",
+    "date": "May 28, 2022, 2:55:04 PM",
+    "receiveAccount": "0798654321",
+    "receiveMoney": 1000000
+  },
+  {
+    "id": 102,
+    "userId": 1,
+    "content": "Quang chuyen tien mung tuoi",
+    "date": "May 28, 2022, 2:25:56 PM",
+    "receiveAccount": "0798654321",
+    "receiveMoney": 200000
+  },
+  {
+    "id": 1,
+    "userId": 1,
+    "content": "Quang chuyen tien tro",
+    "date": "Jun 15, 2022, 12:00:00 AM",
+    "receiveAccount": "0897654321",
+    "receiveMoney": 500000
+  },
+  {
+    "id": 2,
+    "userId": 1,
+    "content": "Quang chuyen tien luong",
+    "date": "Jun 15, 2022, 12:00:00 AM",
+    "receiveAccount": "0798654321",
+    "receiveMoney": 500000
+  }
+]
